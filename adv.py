@@ -27,7 +27,11 @@ player = Player(world.starting_room)
 
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
-traversal_path = []
+traversal_path = ['n', 's', 'e', 'w']
+go_back = {'n': 's', 'e': 'w', 's': 'n', 'w': 'e'}
+previous_option = [None]
+room_flow = {}
+covered = {}
 
 
 
